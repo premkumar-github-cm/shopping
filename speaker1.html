@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7367208505.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        .container {
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .section1 {
+            height: 370px;
+            width: 105%;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative;
+            padding-bottom: 3%;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 350px
+        }
+
+        .section1 .mySlides img {
+            width: 250px
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: black;
+            font-weight: bold;
+            font-size: 22px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            left: 0;
+            text-align: left;
+
+        }
+
+        .next {
+            text-align: right;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /********** section 2**********/
+        .section2 {
+            width: 105%;
+            padding-left: 4%;
+        }
+
+        .section2 p {
+            font-size: 17px;
+        }
+
+        .section2 button {
+            background-color: #81b214;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        /************ section 3********/
+        .section3 {
+            width: 105%;
+            box-sizing: border-box;
+            margin: 0;
+            padding-top: 0;
+            padding-left: 4%;
+            display: flex;
+            box-sizing: border-box;
+            padding-bottom: 3%;
+            overflow: scroll;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 0 5px black;
+        }
+
+        .section3 button {
+            width: 80px;
+            padding: 1%;
+            height: 75px;
+            background-color: white;
+            border: 1px solid black;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .section3 button img {
+            width: 50px;
+            height: 60px;
+        }
+
+        .section3 button:focus {
+            border: 2px solid blue;
+        }
+
+        /******** section 4*******/
+        .section4 {
+            width: 105%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+        /********* section 5 *********/
+        .section5 {
+            width: 105%;
+            box-sizing: border-box;
+            position: sticky;
+            bottom: 0px;
+
+        }
+
+        .section5 button {
+            width: 49.4%;
+            margin: 0;
+            height: 50px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .addtocart {
+            background-color: white;
+        }
+
+        .buy {
+            background-color: #f6830f;
+        }
+        .backbtn{
+            color:black;
+            font-size: 20px;
+            position: relative;
+            left:5%;
+            top:20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      <a href="index.html" class="backbtn"><i class="fas fa-chevron-left"></i></a>
+        <div class="section1">
+            <div class="images">
+                <div class="mySlides ">
+                    <img src="speaker1.png" class="slideimg">
+                </div>
+
+                <div class="mySlides ">
+                    <img src="speaker1_1.jpeg">
+                </div>
+
+                <div class="mySlides ">
+                    <img src="speaker1_2.jpeg">
+                </div>
+
+                <div class="mySlides ">
+                    <img src="speaker1_3.jpeg">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <!--Section 2-->
+        <div class="section2">
+            <p>boAT stone 260 4 W Portable Bluetooth Speaker(charcoal black, Mono Channel)</p>
+
+            <button>4.4 <i class="fas fa-star"></i></button>
+
+            <h2>&#8377;1,500</h2>
+        </div>
+        <hr>
+        <!--Section 3-->
+        <h3>Colors</h3>
+        <div class="section3">
+            <button><img src="speaker1.png"></button>
+            <button><img src="speaker2.png" class="bluespeaker"></button>
+            <button><img src="speaker1_1_1.jpeg"></button>
+            <button><img src="speaker1_1_2.jpeg"></button>
+            <button><img src="speaker1_1_3.jpeg"></button>
+            <button><img src="speaker1_1_4.jpeg"></button>
+        </div>
+
+        <!--Section 4-->
+        <div class="section4">
+            <h2 style="text-decoration: underline;">Highlights</h2>
+            <h4>&#8226; Power Output (RMS): 4W</h4>
+            <h4>&#8226; Power Source: Battery</h4>
+            <h4>&#8226; Battery Life: 5hr | Charging Time : 2hr</h4>
+            <h4>&#8226; Bluetooth Version : 5</h4>
+            <h4>&#8226; Wireless Range : 10m</h4>
+            <h4>&#8226; Wireless Music Streaming via Bluetooth</h4>
+            <h4>&#8226; Built-in mic for hands free calling</h4>
+            <h4>&#8226; Using simple touch control change music tracks and control volume.</h4>
+            <h4>&#8226; IPX 5 splash proof-enjoy usc even in the shower/rain.</h4>
+            <h4>&#8226; Take your music in your bag or clipped to your clothes with its compact design, light weight and
+                carabiner clip.</h4>
+        </div>
+
+        <!--Section 5-->
+        <div class="section5">
+            <button class="addtocart">Add To Cart</button>
+            <button class="buy">Buy Now</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    
+        
+    </script>
+</body>
+
+</html>

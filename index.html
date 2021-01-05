@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        .container {
+            width: 105%;
+            box-sizing: border-box;
+            background-color: yellow;
+            height: auto;
+            padding: 0;
+        }
+
+        /********* search bar *****/
+        .search-bar {
+            width: 105%;
+            background-color: #583d72;
+            color: white;
+            padding: 3%;
+            font-size: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .search-bar i {
+            font-size: 18px;
+        }
+
+        .search {
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .search-bar-options {
+            box-sizing: border-box;
+            text-align: left;
+        }
+
+        .search-bar-options i {
+            margin-left: 8px;
+            margin-right: 11px;
+        }
+
+        /*********** filter- section *******/
+        .filter-section {
+            width: 105%;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            box-sizing: border-box;
+            box-shadow: 0px 2px 4px black;
+        }
+
+        .filter-section .col-6 {
+            box-sizing: border-box;
+            text-align: center;
+            padding: 2% 0;
+        }
+
+        /*********** products ***********/
+        .products {
+            width: 105%;
+            height: auto;
+            box-sizing: border-box;
+            background-color: white;
+            position: relative;
+        }
+
+        .products img {
+            width: 190px;
+            text-align: center;
+        }
+        
+        .products .col-6 {
+           box-shadow: 0px 1px black;
+            height: auto;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .products .col-6 a{
+            color: black;
+            text-decoration: none;
+        } 
+
+        .speaker1 {
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .speaker2 {
+            padding-top: 4%;
+            text-align: center;
+        }
+
+        .speaker3 {
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        .speaker4 {
+            text-align: center;
+            padding-top: 25%;
+            box-sizing: border-box;   
+        }
+        .speaker4 img {
+            width: 200px
+        }
+        .speaker5 {
+            text-align: center; 
+            padding-top: 5%;
+        }
+        .speaker6 {
+            text-align: center;   
+            padding-top: 5%;
+        }
+        .speaker7 {
+            padding-top: 5%;
+            text-align: center;   
+        }
+        .speaker8 {
+            text-align: center;
+            padding-top: 5%;
+        }
+        .speaker9 {
+            text-align: center;
+            padding-top: 5%;
+        }
+        .speaker10 {
+            text-align: center;
+            padding-top: 5%;
+        }
+        .products p {
+            font-size: 20px;
+            width: 120px;
+            height: 60px;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .products .star {
+            color: gold;
+            vertical-align: middle;
+        }
+
+        .products span {
+            position: relative;
+            font-size: 25px;
+            bottom: 50px;
+            color: black;
+            right: -45px;
+        }
+
+        .products .favourite {
+            position: absolute;
+            bottom: 20px;
+            font-size: 30px;
+            right: 20px;
+        }
+
+        .click {
+            opacity: 0.6;
+        }
+        .red {
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Search bar-->
+        <div class="search-bar row">
+
+            <div class="col-2 back-button">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="col-4 search">
+                <p>speakers</p>
+            </div>
+
+            <div class="col-6 search-bar-options">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-microphone"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+
+
+        <!--Filter section-->
+        <div class="filter-section row">
+            <div class="col-6 filter">
+                <i class="fas fa-sort-amount-up"></i> Sort
+            </div>
+            <div class="col-6 sort">
+                <i class="fas fa-grip-lines"></i> Filter
+            </div>
+        </div>
+
+        <!-- products-->
+        <div class="products row">
+            <div class="speaker1 col-6">
+                <a href="speaker1.html"><img src="speaker1.png">
+                <p>boAT stone 260 N portable speaker</p>
+                <p><i class="fas fa-star star"></i> 4.8</p>
+                <span>&#8377 1,500</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker2 col-6">
+                <a href="speaker2.html"><img src="speaker2.png">
+                <p>boAT stone 260 N portable speaker</p>
+                <p><i class="fas fa-star star"></i> 4.8</p>
+                <span>&#8377 1,500</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker3 col-6">
+                <a href=""><img src="speaker3.png">
+                <p>Amazon Echo dot smart speaker</p>
+                <p><i class="fas fa-star star"></i> 4.6</p>
+                <span>&#8377 5,200</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker4 col-6">
+                <a href=""><img src="speaker4.png">
+                <p>Google Home Max</p>
+                <p><i class="fas fa-star star"></i> 4.9</p>
+                <span>&#8377 4,500</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker5 col-6">
+                <a href=""><img src="speaker5.png">
+                <p>MIVI Roam ultra-portable speakers</p>
+                <p><i class="fas fa-star star"></i> 5</p>
+                <span>&#8377 2,200</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker6 col-6">
+                <a href=""><img src="speaker6.png">
+                <p>MIVI Moonstone portbe wireless speakers</p>
+                <p><i class="fas fa-star star"></i> 4</p>
+                <span>&#8377 2,500</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker7 col-6">
+                <a href=""><img src="speaker7.png">
+                <p>MIVI Moonstone</p>
+                <p><i class="fas fa-star star"></i> 4.3</p>
+                <span>&#8377 3,200</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker8 col-6">
+                <a href=""><img src="speaker8.png">
+                <p>MIVI Octave 2 wireless speakers</p>
+                <p><i class="fas fa-star star"></i> 4.5</p>
+                <span>&#8377 3,200</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker9 col-6">
+                <a href=""><img src="speaker9.png">
+                <p>JBL PartyBox 300 </p>
+                <p><i class="fas fa-star star"></i> 5.0</p>
+                <span>&#8377 29,499</span>
+                <i class="fas fa-heart favourite"></i>
+                </a>
+            </div>
+            <div class="speaker10 col-6">
+                <a href=""><img src="speaker10.png">
+                <p>Pulse 3 Refurbished</p>
+                <p><i class="fas fa-star star"></i> 4.3</p>
+                <span>&#8377 12,110</span>
+               <button onclick="change()"><i class="fas fa-heart favourite"></i>
+                </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Scripts tag-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7367208505.js" crossorigin="anonymous"></script>
+    <script>
+   $('.products .col-6').click(function(){
+       $(this).addClass('click')
+   })
+   setInterval(function() {
+    $('.products .col-6').removeClass('click')
+   }, 1000);
+  
+
+    </script>
+</body>
+
+</html>
